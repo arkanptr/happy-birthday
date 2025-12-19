@@ -22,14 +22,20 @@
         <div class="photo-frame">
             <img src="hbdcil.jpg" alt="Birthday Photo" id="birthday-photo">
         </div>
-        <!-- Instruksi: Upload file hbdcil.jpg ke folder yang sama dengan index.html di GitHub repo Anda. -->
+        <!-- Backsound dan tombol play dipindah ke sini, di bawah foto -->
+        <audio id="background-music" loop muted>
+            <source src="soft.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <button id="play-music" style="margin-top: 10px; padding: 10px 20px; background-color: #FF69B4; color: white; border: none; border-radius: 5px; cursor: pointer;">Play Music</button>
+        <!-- Instruksi: Upload file hbdcil.jpg dan soft.mp3 ke folder yang sama dengan index.html di GitHub repo Anda. -->
     </section>
 
     <!-- Bagian teks ucapan -->
     <section class="message-section">
         <div class="message">
             <p>happy birthday, my dearest bocil.</p>
-            <p>my best wishes to u, semoga di umur kamu yang sekarang 20 ini semua yang kamu harapkan bisa mulai terkabulkan. aku tau banyak hal yang menyusahkan kamu dalam kamu ngejalanin hari, tapi aku selalu bangga sama kamu yang bisa ngelaluin itu semua. selalu ada 1001 alasan kenapa kamu hadir di dunia ini dan aku harap 1001 itu hal yang kamu cinta semua. terima kasih karena sudah menjalani hidup dengan baik hingga hari ini dan bisa menjadi orang yang berarti buat aku.</p>
+            <p>my best wishes to u, semoga di umur kamu yang memasuki 20 ini semua yang kamu harapkan bisa mulai terkabulkan. aku tau banyak hal yang menyusahkan kamu dalam kamu ngejalanin hari, tapi aku selalu bangga sama kamu yang bisa ngelaluin itu semua. selalu ada 1001 alasan kenapa kamu hadir di dunia ini dan aku harap 1001 itu hal yang kamu cinta semua. terima kasih karena sudah menjalani hidup dengan baik hingga hari ini dan bisa menjadi orang yang berarti buat aku.</p>
             <p>aku ngeliat gimana kamu tumbuh pelan pelan jadi versi diri kamu yang sekarang, dan aku tau proses itu ga selalu mudah. ada hari hari dimana kamu harus kuat sendirian, ada juga hari dimana kamu cuma butuh didengerin tanpa harus dijudge apa apa. tapi dari semua itu kamu tetep jadi kamu, orang yang hangat, peduli, dan selalu berusaha ngasih yang terbaik bahkan di saat kamu sendiri lagi cape. buat aku itu bukan hal kecil dan itu ga pernah luput dari rasa bangga dan kagum aku ke kamu.</p>
             <p>aku harap di kedepannya kamu bisa ngurangin rasa mudah bersalah kamu dan perbanyak pikiran baik tentang kehidupan ini, aku bener bener berharap semua yang terbaik yang bisa kamu dapatkan. kamu selalu jadi jawaban atas segala pertanyaan, entah itu dari aku ataupun orang orang di sekitar kamu, dan itu nilai diri kamu yang sangat tinggi dalam hal apapun di mata aku.</p>
             <p>kalau suatu hari nanti kamu lupa betapa berharganya diri kamu, aku harap kamu inget kalo ada aku yang selalu percaya sama kamu bahkan di saat kamu sendiri lagi ragu. kamu ga perlu jadi siapa siapa selain diri kamu sendiri buat pantas dicintai, dan kamu ga perlu ngebuktiin apa pun ke siapa pun buat jadi cukup.</p>
@@ -40,7 +46,7 @@
         </div>
     </section>
 
-    <!-- Footer dengan hiasan dan backsound -->
+    <!-- Footer dengan hiasan -->
     <footer>
         <div class="decorations">
             <!-- Hiasan SVG sederhana: hearts, stars, dll. -->
@@ -56,18 +62,9 @@
                 <text x="25" y="30" text-anchor="middle" font-family="Pacifico" font-size="12" fill="#FF69B4">✨</text>
             </svg>
         </div>
-        <!-- Backsound: Diganti dengan soft.mp3 -->
-        <!-- Autoplay dengan muted untuk menghindari blokir browser, lalu unmute dengan tombol. -->
-        <audio id="background-music" loop muted>
-            <source src="soft.mp3" type="audio/mp3">
-            Your browser does not support the audio element.
-        </audio>
-        <button id="play-music" style="margin-top: 10px; padding: 10px 20px; background-color: #FF69B4; color: white; border: none; border-radius: 5px; cursor: pointer;">Play Music</button>
     </footer>
 
     <!-- Link ke file JS -->
     <script src="script.js"></script>
 </body>
 </html>
-
-
