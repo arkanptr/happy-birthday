@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday!</title>
-    <!-- Google Fonts untuk font romantis -->
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
+    <!-- Google Fonts: Font yang lebih mudah dibaca (Lato untuk body, Pacifico untuk header tetap lucu) -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Pacifico&display=swap" rel="stylesheet">
     <!-- Link ke file CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -18,11 +18,11 @@
 
     <!-- Bagian foto dengan frame -->
     <section class="photo-section">
-        <!-- Placeholder image. Ganti src dengan URL foto asli Anda. Contoh: src="path/to/your/photo.jpg" -->
+        <!-- Placeholder image diganti dengan hbdcil.jpg -->
         <div class="photo-frame">
-            <img src="https://via.placeholder.com/300x300/FFB6C1/FFFFFF?text=Your+Photo+Here" alt="Birthday Photo" id="birthday-photo">
+            <img src="hbdcil.jpg" alt="Birthday Photo" id="birthday-photo">
         </div>
-        <!-- Instruksi untuk mengganti foto: Ganti src pada tag img di atas dengan URL foto Anda. Jika upload ke GitHub, letakkan foto di folder yang sama dan ganti src menjadi nama file foto, misalnya "foto.jpg". -->
+        <!-- Instruksi: Upload file hbdcil.jpg ke folder yang sama dengan index.html di GitHub repo Anda. -->
     </section>
 
     <!-- Bagian teks ucapan -->
@@ -37,7 +37,7 @@
         </div>
     </section>
 
-    <!-- Footer dengan hiasan -->
+    <!-- Footer dengan hiasan dan backsound -->
     <footer>
         <div class="decorations">
             <!-- Hiasan SVG sederhana: hearts, stars, dll. -->
@@ -53,6 +53,13 @@
                 <text x="25" y="30" text-anchor="middle" font-family="Pacifico" font-size="12" fill="#FF69B4">✨</text>
             </svg>
         </div>
+        <!-- Backsound: Diganti dengan soft.mp3 -->
+        <!-- Autoplay dengan muted untuk menghindari blokir browser, lalu unmute dengan tombol. -->
+        <audio id="background-music" loop muted>
+            <source src="soft.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <button id="play-music" style="margin-top: 10px; padding: 10px 20px; background-color: #FF69B4; color: white; border: none; border-radius: 5px; cursor: pointer;">Play Music</button>
     </footer>
 
     <!-- Link ke file JS -->
