@@ -34,8 +34,7 @@ header h1 {
 
 /* Bagian foto */
 .photo-section {
-    margin-bottom: 30px;
-    text-align: center; /* Agar tombol di tengah */
+    margin-bottom: 20px; /* Kurangi margin agar tidak terlalu jauh dari tombol */
 }
 
 .photo-frame {
@@ -52,6 +51,12 @@ header h1 {
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+/* Section untuk music (tombol play) */
+.music-section {
+    text-align: center;
+    margin-bottom: 20px; /* Jarak ke message-section */
 }
 
 /* Bagian pesan */
