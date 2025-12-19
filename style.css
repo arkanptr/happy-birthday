@@ -9,9 +9,9 @@
 /* Body dengan background pink pastel */
 body {
     background-color: #FFB6C1; /* Pink pastel */
-    font-family: 'Dancing Script', cursive; /* Font romantis */
+    font-family: 'Lato', sans-serif; /* Font lebih mudah dibaca */
     color: #333; /* Warna teks gelap untuk kontras */
-    line-height: 1.6;
+    line-height: 1.5; /* Line spacing 1.5 */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -26,7 +26,7 @@ header {
 }
 
 header h1 {
-    font-family: 'Pacifico', cursive; /* Font lucu untuk judul */
+    font-family: 'Pacifico', cursive; /* Font lucu untuk judul tetap */
     font-size: 3em;
     color: #FF69B4; /* Pink lebih gelap untuk aksen */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
