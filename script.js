@@ -1,48 +1,105 @@
-// script.js
-// Script sederhana untuk animasi sparkle pada hiasan (opsional, untuk kesan lucu)
-document.addEventListener('DOMContentLoaded', function() {
-    // Fungsi untuk membuat animasi sparkle pada SVG
-    const decorations = document.querySelectorAll('.decorations svg');
-    
-    decorations.forEach(svg => {
-        svg.addEventListener('mouseover', function() {
-            this.style.transform = 'scale(1.1)';
-            this.style.transition = 'transform 0.3s ease';
-        });
-        
-        svg.addEventListener('mouseout', function() {
-            this.style.transform = 'scale(1)';
-        });
-    });
-    
-    // Opsional: Tambahkan confetti sederhana saat halaman load (menggunakan CSS animation)
-    // Ini hanya untuk kesan lucu, bisa dihapus jika tidak perlu
-    const body = document.body;
-    for (let i = 0; i < 20; i++) {
-        const confetti = document.createElement('div');
-        confetti.className = 'confetti';
-        confetti.style.left = Math.random() * 100 + 'vw';
-        confetti.style.animationDelay = Math.random() * 2 + 's';
-        body.appendChild(confetti);
-    }
-});
+/* style.css */
+/* Reset dasar untuk konsistensi */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-// CSS untuk confetti (tambahkan ke style.css jika ingin)
-const style = document.createElement('style');
-style.textContent = `
-    .confetti {
-        position: absolute;
-        top: -10px;
-        width: 10px;
-        height: 10px;
-        background-color: #FF69B4;
-        animation: fall 3s linear infinite;
+/* Body dengan background pink pastel */
+body {
+    background-color: #FFB6C1; /* Pink pastel */
+    font-family: 'Lato', sans-serif; /* Font lebih mudah dibaca */
+    color: #333; /* Warna teks gelap untuk kontras */
+    line-height: 1.5; /* Line spacing 1.5 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-family: 'Pacifico', cursive; /* Font lucu untuk judul tetap */
+    font-size: 3em;
+    color: #FF69B4; /* Pink lebih gelap untuk aksen */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Bagian foto */
+.photo-section {
+    margin-bottom: 30px;
+}
+
+.photo-frame {
+    border: 5px solid #FF69B4; /* Frame pink */
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #FFF; /* Background putih untuk frame */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: inline-block;
+}
+
+.photo-frame img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Bagian pesan */
+.message-section {
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparan putih */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.message p {
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+/* Footer dengan hiasan */
+footer {
+    text-align: center;
+}
+
+.decorations {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Responsif untuk mobile */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
     }
     
-    @keyframes fall {
-        to {
-            transform: translateY(100vh);
-        }
+    .photo-frame img {
+        width: 250px;
+        height: 250px;
     }
-`;
-document.head.appendChild(style);
+    
+    .message-section {
+        padding: 15px;
+    }
+    
+    .message p {
+        font-size: 1em;
+    }
+    
+    .decorations {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
